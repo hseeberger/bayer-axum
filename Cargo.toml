@@ -1,0 +1,16 @@
+[package]
+name = "bayer-axum"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.58"
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0", features = [ "http2", "json" ] }
+config = "0"
+serde = { version = "1", features = [ "derive" ] }
+tokio = { version = "1", features = [ "full" ] }
+tower = "0"
+tower-http = { version = "0", features = [ "trace" ] }
+tracing = "0"
+tracing-subscriber = { version = "0", features = [ "env-filter", "fmt", "json", "tracing-log" ] }
